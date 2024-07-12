@@ -8,6 +8,9 @@ for(const link of links) {
     li.innerHTML = `<a href="${link.toLocaleLowerCase()}.html" >${link}</a>`
     ul.appendChild(li);
 };
+if(ul.children.length > 0) {
+    ul.children[0].querySelector('a').innerText = "INICIO";
+}
 footer[0].appendChild(parrafoFooter);
 parrafoFooter.innerHTML = `<h3>${fecha}</h3>`;
 footer[0].appendChild(div);
